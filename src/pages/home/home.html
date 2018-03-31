@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Web Service App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="home">
+  <ion-list>
+    <ion-item *ngFor="let data of news">
+      <h2>{{data.dep}}</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>
