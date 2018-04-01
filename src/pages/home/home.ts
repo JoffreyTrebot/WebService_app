@@ -10,10 +10,10 @@ import { NewApiService } from '../../services/newapi.service';
 })
 export class HomePage {
 
-  news: NewApiGlobal;
+  news: NewApiGlobal = new NewApiGlobal;
 
   constructor(public navCtrl: NavController, private newApiService: NewApiService) {
-  
+
     this.newApiService.getObjects()
     .then(newsFetched => {
       this.news = newsFetched;

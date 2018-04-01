@@ -12,12 +12,12 @@ import 'rxjs/add/operator/map';
 export class NewApiService {
 
     private baseUrl: string = 'http://joffreytrebot.raidghost.com/';
-    
+
     constructor(private http: Http) { }
 
     public getObjects(): Promise<any> {
-		const url = `${this.baseUrl}depPraticienJson.php`;
-        
+		const url = `${this.baseUrl}apiGSB/praticien/readDep.php`;
+
         return this.http.get(url)
         .toPromise()
         .then(response => response.json())

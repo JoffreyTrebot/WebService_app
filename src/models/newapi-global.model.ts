@@ -1,3 +1,6 @@
+import { NewApiDepartement } from './newapi-departement.model'
+
 export class NewApiGlobal{
-    dep: string;
+    departement_praticien: string;
+    dep: NewApiDepartement[];
 }
